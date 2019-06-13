@@ -1,0 +1,13 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<WelcomeConfig> Config
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Configuration Basics</h1>
+
+<p>@Config.Value.Message</p>
+<p>@Config.Value.TodaysNumber</p>
+<p>@Config.Value.SystemUp</p>
